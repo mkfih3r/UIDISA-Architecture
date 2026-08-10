@@ -1,5 +1,9 @@
 # 🛡️ UIDISA: Unified Intent-Driven Information Security Architecture
 
+<p align="center">
+  <img src="path/to/your/uidisa-bannar.png" alt="UIDISA Architecture Banner" width="100%">
+</p>
+
 [![License: CC BY-NC-ND 4.0](https://img.shields.io/badge/License-CC%20BY--NC--ND%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-nd/4.0/)
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/)
 [![Go 1.18+](https://img.shields.io/badge/Go-1.18+-00ADD8.svg)](https://golang.org/)
@@ -68,8 +72,8 @@ If accessed outside of its authorized execution context or target environment, t
  │   - Non-recoverable Volatile Memory Erasure                            │
  └────────────────────────────────────────────────────────────────────────┘
 ```
-## 📁 Complete Repository File Tree
-```text
+📁 Complete Repository File Tree
+```bash
 UIDISA-Architecture/
 ├── README.md                 <-- Comprehensive System Overview & Usage Guide
 ├── WHITEPAPER.md             <-- Complete Academic Whitepaper
@@ -95,57 +99,50 @@ UIDISA-Architecture/
     └── go_core/              <-- Native High-Performance Module
         └── uidisa.go         <-- Low-Latency Golang Engine
 ```
-# ⚙️ Prerequisites
-
-​* Ensure you have the following installed on your system:
-​Python: 3.8 or higher
-​* Go (Optional for Go Native Engine): 1.18 or higher
-​Git: Installed and configured
-# ​🛠️ Step-by-Step Installation & Execution Guide
-​Clone the Repository
-​Open your terminal or command prompt and run:
-
+## ⚙️ Prerequisites
+Ensure you have the following installed on your system:
+ * Python: 3.8 or higher
+ * Go (Optional for Go Native Engine): 1.18 or higher
+ * Git: Installed and configured
+## 🛠️ Step-by-Step Installation & Execution Guide
+Clone the Repository
+Open your terminal or command prompt and run:
 ```bash
 git clone [https://github.com/mkfih3r/UIDISA-Architecture.git](https://github.com/mkfih3r/UIDISA-Architecture.git)
 cd UIDISA-Architecture
 ```
-* 1. Running the Interactive CLI Dashboard
-​Launch the live interactive workbench to package custom payloads, simulate real-time Man-In-The-Middle (MITM) attacks, and inspect volatile memory sanitization:
+## 1. Running the Interactive CLI Dashboard
+Launch the live interactive workbench to package custom payloads, simulate real-time Man-In-The-Middle (MITM) attacks, and inspect volatile memory sanitization:
 ```bash
 python uidisa_core/cli.py
 ```
-## Interactive Menu Options:
-
-* i. ​**Package Payload into SIU:** Assign Semantic Weight (\Sigma) and environmental hashes to package raw data.
-* ii. **​Simulate Authorized Decryption:** Observe clean payload extraction under validated intent conditions.
-​* iii. **Simulate MITM Attack / Context Hijack:** Watch the system trigger entropic self-destruction when an unauthorized node attempts access.
-​* iv. **Inspect Volatile Memory State Wiper:** Observe hardware-level byte overwriting in real time.
-
-## ​2. Running the Core Pipeline Demo
-​To run an automated execution flow demonstrating authorized access vs. malicious interception:
-
+# Interactive Menu Options:
+ * i. Package Payload into SIU: Assign Semantic Weight (\Sigma) and environmental hashes to package raw data.
+ * ii. Simulate Authorized Decryption: Observe clean payload extraction under validated intent conditions.
+ * iii. Simulate MITM Attack / Context Hijack: Watch the system trigger entropic self-destruction when an unauthorized node attempts access.
+ * iv. Inspect Volatile Memory State Wiper: Observe hardware-level byte overwriting in real time.
+# 2. Running the Core Pipeline Demo
+To run an automated execution flow demonstrating authorized access vs. malicious interception:
 ```bash
 python uidisa_core/main_demo.py
 ```
-## 3. Running Automated Unit Tests
-​Ensure all components are functioning securely using pytest:
-
-```bash
+# 3. Running Automated Unit Tests
+Ensure all components are functioning securely using pytest:
 # Install pytest (if not already installed)
+```bash
 pip install pytest
-
+```
 # Run all unit tests
+```bash
 pytest
 ```
-## 4. Executing High-Performance Go Native Engine
-​To test the ultra-fast Go implementation designed for low-latency systems (e.g., V2X Automotive ECUs, IoT Gateways):
-
+4. Executing High-Performance Go Native Engine
+To test the ultra-fast Go implementation designed for low-latency systems (e.g., V2X Automotive ECUs, IoT Gateways):
 ```bash
 cd uidisa_core/go_core
 go run uidisa.go
 ```
 ## 🧮 Mathematical Formulation
-
 ### 1. Smart Information Unit (SIU) Formulation
 The Smart Information Unit (SIU) is defined as a 3-tuple state space that binds the scrambled payload tensor, semantic priority, and the active entropic barrier:
 
@@ -153,9 +150,9 @@ $$\text{SIU} = \langle P, \Sigma, \Delta \rangle$$
 
 Where:
 * **$P$ (Scrambled Payload Tensor):** Represented as
-   **$P = f_{\text{scramble}}(M, \mathbf{K}_{\text{context}})$,**
+**$P = f_{\text{scramble}}(M, \mathbf{K}_{\text{context}})$,**
 where $M$ is the plaintext payload and
-   **$\mathbf{K}_{\text{context}}$**
+**$\mathbf{K}_{\text{context}}$**
 is the dynamic context key matrix derived from environmental entropy.
 * **$\Sigma \in [0.0, 1.0]^{m \times n}$
 (Semantic Weight Matrix):** A normalized matrix/tensor defining the relative utility and routing priority of the packet across zero-decryption network nodes.
@@ -182,6 +179,12 @@ Where:
 
 ---
 
+system prompt integrity and operational objectives.
+* **$\mathbf{C}$ (Context Vector):** Validates caller environment, execution state, and cryptographic nonces.
+* **$\mathbf{B}$ (Boundary Vector):** Enforces hard computational, network, and access limitations.
+
+---
+
 ### 3. Active Entropic Self-Defense Transformation
 If access is requested outside the validated intent boundary or environmental noise exceeds the allowable threshold ($\Delta \neq 0$), the payload undergoes immediate and non-recoverable entropic corruption:
 
@@ -189,3 +192,21 @@ $$\text{If } \Delta \neq 0 \implies P \leftarrow P \oplus \mathcal{N}_{\text{ent
 
 Where $\mathcal{N}_{\text{entropy}}$ represents pseudo-random mathematical noise injected directly at the memory byte-level, causing irreversible payload degradation before decryption algorithms can process the data.
 payload degradation before decryption algorithms can process the data.
+
+## 📜 Intellectual Property & Citation
+```text
+Copyright © 2026 md kazi Fuadul islam. All Rights Reserved.
+Distributed under the Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0) license.
+```
+# Citing UIDISA
+If you use, reference, or evaluate this security architecture in research or software implementation, please cite it using:
+```
+@misc{islam2026uidisa,
+  author = {mkfih3r},
+  title = {UIDISA: Unified Intent-Driven Information Security Architecture},
+  year = {2026},
+  publisher = {GitHub},
+  journal = {GitHub Repository},
+  howpublished = {\url{[https://github.com/mkfih3r/UIDISA-Architecture](https://github.com/mkfih3r/UIDISA-Architecture)}}
+}
+```
