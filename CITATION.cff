@@ -1,0 +1,8 @@
+cff-version: 1.2.0
+title: "UIDISA: Unified Intent-Driven Information Security Architecture"
+message: "If you use or reference this security architecture, please cite it as below."
+authors:
+  - family-names: "islam"
+    given-names: "md kazi Fuadul"
+date-released: 2026-08-10
+url: "https://github.com/mkfih3r/UIDISA-Architecture"
