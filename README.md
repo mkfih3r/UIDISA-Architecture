@@ -1,7 +1,7 @@
 # 🛡️ UIDISA: Unified Intent-Driven Information Security Architecture
 
 <p align="center">
-  <img src="path/to/your/uidisa-bannar.png" alt="UIDISA Architecture Banner" width="100%">
+  <img src="docs/assets/uidisa_banner.png" alt="UIDISA Banner" width="100%">
 </p>
 
 [![License: CC BY-NC-ND 4.0](https://img.shields.io/badge/License-CC%20BY--NC--ND%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-nd/4.0/)
