@@ -111,7 +111,6 @@ cd UIDISA-Architecture
 ```
 * 1. Running the Interactive CLI Dashboard
 ​Launch the live interactive workbench to package custom payloads, simulate real-time Man-In-The-Middle (MITM) attacks, and inspect volatile memory sanitization:
-```
 ```bash
 python uidisa_core/cli.py
 ```
