@@ -116,10 +116,10 @@ python uidisa_core/cli.py
 ```
 ## Interactive Menu Options:
 
-* 1. ​**Package Payload into SIU:** Assign Semantic Weight (\Sigma) and environmental hashes to package raw data.
-* 2. **​Simulate Authorized Decryption:** Observe clean payload extraction under validated intent conditions.
-​* 3. **Simulate MITM Attack / Context Hijack:** Watch the system trigger entropic self-destruction when an unauthorized node attempts access.
-​* 4. **Inspect Volatile Memory State Wiper:** Observe hardware-level byte overwriting in real time.
+* i. ​**Package Payload into SIU:** Assign Semantic Weight (\Sigma) and environmental hashes to package raw data.
+* ii. **​Simulate Authorized Decryption:** Observe clean payload extraction under validated intent conditions.
+​* iii. **Simulate MITM Attack / Context Hijack:** Watch the system trigger entropic self-destruction when an unauthorized node attempts access.
+​* iv. **Inspect Volatile Memory State Wiper:** Observe hardware-level byte overwriting in real time.
 
 ## ​2. Running the Core Pipeline Demo
 ​To run an automated execution flow demonstrating authorized access vs. malicious interception:
