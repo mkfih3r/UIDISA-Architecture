@@ -7,26 +7,16 @@ An active, intent-driven cryptographic framework transitioning information secur
 
 ---
 
-## 📌 Executive Summary
-For over 70 years, global cybersecurity has relied on passive encryption (AES/TLS). **UIDISA** solves the fundamental vulnerability of offline cryptanalysis and AI prompt injections by embedding **Semantic Weight ($\Sigma$)** and **Computational Intent Vector Matrix ($\vec{I}$)** directly into information units.
+## ⚡ Quick Start: Running the Core Engine
 
-If accessed outside of its intended environment or context, the data payload permanently mutates into **irreversible mathematical noise** before decryption can be attempted.
+Run the interactive runtime demo to observe active payload destruction during unauthorized interception:
 
----
+```bash
+# Clone the repository
+git clone [https://github.com/mkfih3r/UIDISA-Architecture.git](https://github.com/mkfih3r/UIDISA-Architecture.git)
 
-## 🚀 Key Features
-* **Active Entropic Self-Defense:** Automated payload destruction upon unauthorized interception.
-* **Intent Verification Engine Matrix (IVEM):** Boundary-checked execution logic neutralizing AI prompt injection.
-* **Zero-Decryption Priority Routing:** Network nodes prioritize high-priority packets without payload decryption.
+# Navigate to the directory
+cd UIDISA-Architecture
 
----
-
-## 📁 Repository Navigation
-* 📄 **[Full Technical Whitepaper](WHITEPAPER.md):** Read the complete mathematical formulations and state machines.
-* 💻 **[Proof-of-Concept Prototype](src/prototype.py):** Python simulation demonstrating active payload destruction.
-
----
-
-## 📜 Intellectual Property & Copyright
-Copyright © 2026 **md kazi Fuadul islam**. All Rights Reserved.  
-Distributed under the **Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)** license.
+# Run the core system demonstration
+python uidisa_core/main_demo.py
