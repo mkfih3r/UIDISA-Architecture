@@ -11,7 +11,36 @@ def print_banner():
     print(" 🛡️  UIDISA: UNIFIED INTENT-DRIVEN INFORMATION SECURITY ARCHITECTURE")
     print("    Active Entropic Self-Defense Runtime Engine & Inspection Workbench")
     print("=========================================================================\n")
+import os
 
+def display_banner():
+    # Terminal Colour Code (Color Styling)
+    CYAN = '\033[96m'
+    GREEN = '\033[92m'
+    YELLOW = '\033[93m'
+    RESET = '\033[0m'
+
+    banner = f"""{CYAN}
+  _   _  ___  ____  ___  ____    _    
+ | | | ||_ _||  _ \\|_ _|/ ___|  / \\   
+ | | | | | | | | | || | \\___ \\ / _ \\  
+ | |_| | | | | |_| || |  ___) / ___ \\ 
+  \\___/ |___||____/|___||____/_/   \\_\\
+                                      
+{RESET}=========================================================
+{YELLOW} Unified Intent-Driven Information Security Architecture{RESET}
+=========================================================
+ {GREEN}[+]{RESET} Core Engine       : Online
+ {GREEN}[+]{RESET} Entropic Barrier  : Standby
+ {GREEN}[+]{RESET} IVEM Matrix       : Active
+ {GREEN}[+]{RESET} Version           : 1.0.0
+=========================================================
+    """
+    
+    # Screen clear bannar
+    os.system('cls' if os.name == 'nt' else 'clear')
+    print(banner)
+    
 def run_interactive_cli():
     print_banner()
     
